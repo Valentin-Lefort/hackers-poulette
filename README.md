@@ -16,7 +16,6 @@
 - [Variables, GET, POST](https://www.php.net/manual/fr/language.variables.external.php)
 - [Accesible Form](https://formspree.io/blog/accessible-forms/)
 - [Form](https://www.php.net/manual/fr/tutorial.forms.php)
-- [empty](https://www.php.net/manual/en/function.empty.php)
 - [Form security and validation in PHP](https://www.pierre-giraud.com/php-mysql-apprendre-coder-cours/securiser-valider-formulaire/)
 - [class mailer](https://github.com/PHPMailer/PHPMailer)
 - [MailHog](https://github.com/mailhog/MailHog)

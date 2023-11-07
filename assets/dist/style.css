@@ -697,6 +697,10 @@ video {
   clear: none;
 }
 
+.m-auto{
+  margin: auto;
+}
+
 .mb-6{
   margin-bottom: 1.5rem;
 }
@@ -707,6 +711,10 @@ video {
 
 .mt-2{
   margin-top: 0.5rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
 }
 
 .box-border{
@@ -808,6 +816,10 @@ video {
   display: none;
 }
 
+.h-full{
+  height: 100%;
+}
+
 .w-full{
   width: 100%;
 }
@@ -822,6 +834,14 @@ video {
 
 .w-40{
   width: 10rem;
+}
+
+.w-5\/6{
+  width: 83.333333%;
+}
+
+.w-2\/3{
+  width: 66.666667%;
 }
 
 .flex-shrink{

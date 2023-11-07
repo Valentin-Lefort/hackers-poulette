@@ -22,8 +22,8 @@ $mail->Body .= "Email: $email\n";
 $mail->Body .= "Message:\n$message\n";
 
 if ($mail->send()) {
-  echo 'Email sent successfully!';
+  echo 'Email sent successfully! Thanks for sending us your feedback.';
 } else {
-  echo 'Email could not be sent.';
-  echo 'Mailer Error: ' . $mail->ErrorInfo;
+  echo 'Email could not be sent, please try again later.';
+  // echo 'Mailer Error: ' . $mail->ErrorInfo;
 }

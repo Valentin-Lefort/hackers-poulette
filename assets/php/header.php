@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Form">
+  <meta name="keywords" content="HTML, CSS, JavaScript, PHP, Tailwind">
+  <meta name="author" content="Valentin Lefort">
   <link rel="stylesheet" href="./assets/dist/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/src/img/hackers-poulette-logo.png">
   <title>Support Contact</title>
 </head>
 
