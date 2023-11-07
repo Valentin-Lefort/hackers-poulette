@@ -1,11 +1,5 @@
 <?php
 
-if (!empty($honeypot)) {
-  echo "Hey don't spam me";
-  return;
-} else {
-  mail($to, $subject, $message, $header);
-}
 // Load the JSON file
 $countries = file_get_contents('assets/json/country.json');
 
