@@ -9,7 +9,7 @@
 
 - This PHP script is designed to handle a customer support form. It collects information such as first name, last name, email address, gender, country, subject, message
 
-![Form contact](https://github.com/Valentin-Lefort/hackers-poulette/blob/main/assets/src/img/Screen-design.png "Form Contact")
+![Form contact](https://github.com/Valentin-Lefort/hackers-poulette/blob/main/assets/src/img/Screen-design2.png "Form Contact")
 
 ## References
 
