@@ -103,7 +103,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <span class="error-message text-colors1" id="message-error"></span>
         </div>
       </div>
-      <button type="submit" class="block py-2.5 px-0 w-2/3 m-auto  text-sm text-gray-900 bg-transparent border border-gray-300 appearance-none dark:text-white peer">Submit</button>
+      <button type="submit" class="block bg-colors3 py-2.5 px-0 w-2/3 m-auto  text-sm text-gray-900 bg-transparent border border-gray-300 appearance-none dark:text-white peer">Submit</button>
     </form>
   </div>
 </main>

@@ -705,16 +705,8 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
-}
-
 .mt-2{
   margin-top: 0.5rem;
-}
-
-.mb-10{
-  margin-bottom: 2.5rem;
 }
 
 .box-border{
@@ -820,16 +812,8 @@ video {
   height: 100%;
 }
 
-.w-full{
-  width: 100%;
-}
-
-.w-10{
-  width: 2.5rem;
-}
-
-.w-20{
-  width: 5rem;
+.w-2\/3{
+  width: 66.666667%;
 }
 
 .w-40{
@@ -840,8 +824,8 @@ video {
   width: 83.333333%;
 }
 
-.w-2\/3{
-  width: 66.666667%;
+.w-full{
+  width: 100%;
 }
 
 .flex-shrink{
@@ -1808,9 +1792,19 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-colors1{
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 129 135 / var(--tw-bg-opacity));
+}
+
 .bg-colors2{
   --tw-bg-opacity: 1;
   background-color: rgb(48 48 48 / var(--tw-bg-opacity));
+}
+
+.bg-colors3{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .decoration-slice{
