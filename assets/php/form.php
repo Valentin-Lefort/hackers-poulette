@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <option value="select" hidden>Select your country</option>
           <?php foreach ($countries as $country) : ?>
             <?php echo "<option value='"
-              . $country['name'] . "'>" . $country['name'] . "</option>"; ?>
+              . $country['name'] . "'>" . $country['name'], " &nbsp;&nbsp;", "-", " &nbsp;&nbsp;", $country["code"] . "</option>"; ?>
           <?php endforeach; ?>
         </select>
         <label for="country" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-colors1 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8">Country</label>
