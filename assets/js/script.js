@@ -21,11 +21,9 @@ function validateForm() {
   // let messageValue = messageInput.value;
 
   if (firstNameValue === "") {
-    firstNameError = document.getElementById("firstName-error");
     firstNameError.textContent = "First Name is required.";
     return false;
   } else if (!firstNamePattern.test(firstNameValue)) {
-    firstNameError = document.getElementById("firstName-error");
     firstNameError.textContent =
       "Invalid format. Please enter a valid First Name.";
     return false;
