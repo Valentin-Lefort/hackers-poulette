@@ -1,5 +1,10 @@
 <?php
 
+if (!empty($honeypot)) {
+  return; //you may add code here to echo an error etc.
+} else {
+  mail($to, $subject, $message, $header);
+}
 // Load the JSON file
 $countries = file_get_contents('assets/json/country.json');
 
@@ -16,6 +21,8 @@ function sanitize($data)
   return $data;
 }
 
+
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $firstname = sanitize($_POST['firstName']);
   $lastname = sanitize($_POST['lastName']);
@@ -28,15 +35,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // echo '<pre>';
   // print_r($_POST);
   // echo '</pre>';
-  include 'mailing.php';
+  include('mailing.php');
 }
+
 
 
 ?>
 <script defer src="./assets/js/script.js"></script>
 <main class="bg-colors2">
 
-  <form id="AddData" method="POST" onsubmit="event.preventDefault(); validateForm();" class="mt-10 font-bellota">
+  <form id="AddData" method="POST" onsubmit="validateForm();" class="mt-10 font-bellota">
     <div class="relative z-0 w-full mb-6 group">
       <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="What's your email ?" required />
       <label for="email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-colors1 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8">Email address</label>
@@ -63,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <div class="relative z-0 w-full mb-6 group">
         <input type="text" name="firstName" id="firstName" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="What's your frist name?" required />
         <label for="firstName" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-colors1 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8">First name</label>
-        <span class="text-colors1" id="firstName-error">test</span>
+        <span class="text-colors1" id="firstName-error"></span>
       </div>
       <div class="relative z-0 w-full mb-6 group">
         <input type="text" name="lastName" id="firstName" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="What's your last name?" required />

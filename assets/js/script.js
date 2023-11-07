@@ -17,8 +17,8 @@ function validateForm() {
   let lastNamePattern = /^[a-zA-Z]+$/;
 
   let messageInput = document.getElementById("message");
-  let messageError = document.getElementById("message-error");
-  let messageValue = messageInput.value;
+  // let messageError = document.getElementById("message-error");
+  // let messageValue = messageInput.value;
 
   if (firstNameValue === "") {
     firstNameError = document.getElementById("firstName-error");
@@ -55,6 +55,6 @@ function validateForm() {
 }
 
 document.getElementById("AddData").addEventListener("submit", function (e) {
-  e.preventDefault();
+  // e.preventDefault();
   validateForm();
 });
